@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT Landing</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- GOOGLE FONT - VARELA ROUND 400 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONT - INTER 300 400 500 600 700 800 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Varela+Round&display=swap" rel="stylesheet"> 
+  <!-- GOOGLE FONTS - ROBOTO 300 400 500 700 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Varela+Round&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONTS - POPPINS 300 400 500 600 700 800 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Varela+Round&display=swap" rel="stylesheet">
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- OWL CAROUSEL SLIDER -->
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"> 
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- STYLE.CSS -->
+  <link rel="stylesheet" href="./sass/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <section class="menu" id="menu">
+      <div class="container container__menu">
+        <div class="menu__head">
+          <a class="logo menu__logo" href="https://www.google.com/">
+            <img class="logo__img logo-white" src="./icons/logo.png" alt="Logo of NFT">
+            <img class="logo__img logo-dark" src="./icons/logo-dark-mode.png" alt="Logo of NFT">
+          </a>
+          <img id="close" class="menu__hamburger" src="./icons/close.svg" alt="Close icon">
+          <img id="close2" class="menu__hamburger" src="./icons/close-white.svg" alt="Close icon in white">
+        </div>
+        <ul class="menu__list">
+          <li class="menu__list--item"><a href="https://www.google.com/">Launch <img class="menu__list--img" src="./icons/arrow-right.svg" alt="let's move"><img class="menu__list--img-white" src="./icons/arrow-right-white.svg" alt="Let's move"></a></li>
+          <li class="menu__list--item"><span id="about">About <img id="about-image" class="menu__list--img" src="./icons/arrow-more.svg" alt="more"><img id="about-image2" class="menu__list--img-white" src="./icons/arrow-down-white.svg" alt="more"></span>
+            <ul id="about-list" class="menu__dropdown">
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">Our story</a></li>
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">Terms</a></li>
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">Legal</a></li>
+            </ul>
+          </li>
+          <li class="menu__list--item"><span class="menu__call">NFT <img class="menu-image" id="nft" src="./icons/arrow-more.svg" alt="more"><img class="menu-image-white" src="./icons/arrow-down-white.svg" alt="more"></span>
+            <ul id="nft-list" class="menu__dropdown menu__antifirst">
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">OpenSea</a></li>
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">Maker</a></li>
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">Learn</a></li>
+            </ul>
+          </li>
+          <li class="menu__list--item"><span class="menu__call">Contact <img class="menu-image" id="contact" src="./icons/arrow-more.svg" alt="more"><img class="menu-image-white" src="./icons/arrow-down-white.svg" alt="more"></span>
+            <ul id="contact-list" class="menu__dropdown menu__antifirst">
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">Press</a></li>
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">Support</a></li>
+            </ul>
+          </li>
+          <li class="menu__list--item"><span class="menu__call">Social <img class="menu-image" id="social" src="./icons/arrow-more.svg" alt="more"><img class="menu-image-white" src="./icons/arrow-down-white.svg" alt="more"></span>
+            <ul id="social-list" class="menu__dropdown menu__antifirst">
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">Twitter</a></li>
+              <li class="menu__dropdown--item"><a href="https://www.google.com/">Instagram</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="dark">
+      <img class="dark__setting dark__setting1" id="dark-mode" src="./icons/dark-mode.svg" alt="The Light Mode Button">
+      <img class="dark__setting dark__setting2" id="light-mode" src="./icons/light-mode.svg" alt="The Dark Mode Button">
+    </section>
+    <header class="header">
+      <div class="container container__header">
+        <a class="logo" href="https://www.google.com/">
+          <img class="logo__img logo-white" id="white-logo" src="./icons/logo.png" alt="Logo of NFT">
+          <img class="logo__img logo-dark" id="dark-logo" src="./icons/logo-dark-mode.png" alt="Logo of NFT">
+        </a>
+        <ul class="header__list">
+          <li class="header__list--item"><a href="https://www.google.com/">Features</a></li>
+          <li class="header__list--item"><a href="https://www.google.com/">About</a></li>
+          <li class="header__list--item"><a href="https://www.google.com/">Launch</a></li>
+          <li class="header__list--item"><a href="https://www.google.com/">Sign Up</a></li>
+        </ul>
+        <i id="open" class="fas fa-bars header__hamburger"></i>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="container container__intro">
+        <div class="intro__info">
+          <div class="intro__notice">LAUNCHING SOON</div>
+          <div class="intro__heading">An NFT like no other</div>
+          <div class="intro__text">Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.</div>
+          <a class="intro__btn buttons" href="https://www.google.com/">Sign Up</a>
+          <div class="intro__btn-2 buttons">
+            <a href="https://www.google.com/">Sign Up</a>
+          </div>
+        </div>
+        <img class="intro__img" src="./images/intro__img.png" alt="Introduction image">
+        <img class="intro__img-2" src="./images/intro__img-2.png" alt="Introduction image">
+      </div>
+    </section>
+    <section class="free">
+      <div class="container container__free">
+        <div class="free__illustration">
+          <img src="./images/free__logo.png" alt="The logo" class="free__logo">
+          <img src="./images/free__illustration.png" alt="The image" class="free__img free__img1">
+          <img src="./images/free__illustration2.png" alt="The image" class="free__img free__img2">
+        </div>
+        <div class="free__info">
+          <div class="free__heading">Free NFT for early birds</div>
+          <div class="free__text">Sign up today and you’ll get a free NFT when we launch.</div>
+        </div>
+      </div>
+    </section>
+    <section class="specialization">
+      <div class="container container__specialization">
+        <img src="./images/specialization__icon.png" alt="Boomerangs" class="specialization__img">
+        <img src="./icons/specialization1.svg" alt="Boomerangs" class="specialization__item">
+        <img src="./icons/specialization2.svg" alt="Blimp" class="specialization__item">
+        <img src="./icons/specialization3.svg" alt="qrco" class="specialization__item">
+        <img src="./icons/specialization4.svg" alt="opendoor" class="specialization__item specialization__opendoor">
+        <img src="./icons/specialization5.svg" alt="droplet" class="specialization__item">
+      </div>
+    </section>
+    <section class="auction">
+      <div class="container container__auction">
+        <div class="auction__heading">LE Super Rare Auction</div>
+        <div class="auction__text">We have released four limited edition NFTs early which can be bid on via <a style="text-decoration: underline" target="_blank"  href="https://www.google.com/">OpenSea</a>.</div>
+        <div class="auction__list owl-carousel">
+          <li class="auction__item">
+            <a class="auction__link" target="_blank" href="https://www.google.com/"><img src="./images/auction__purpleman.png" alt="The Purple Man"></a>
+            <div class="auction__info">
+              <div class="auction__info--item1">
+                <p>GLOOP SERIES</p>
+                <p>TOP BID</p>
+              </div>
+              <div class="auction__info--item2">
+                <a target="_blank" href="https://www.google.com/">Purple Man</a>
+                <p><img class="auction__logo" src="./icons/auction__eth.svg" alt="The auction ETH"> <span>2.99 ETH</span></p>
+              </div>
+              <div class="auction__info--item3">
+                <a target="_blank" href="https://www.google.com/">#12983</a>
+                <span>1 day left</span>
+              </div>
+            </div>
+          </li>
+          <li class="auction__item">
+            <a class="auction__link" target="_blank" href="https://www.google.com/"><img src="./images/auction__beige.png" alt="The Beige"></a>
+            <div class="auction__info">
+              <div class="auction__info--item1">
+                <p>GLOOP SERIES</p>
+                <p>TOP BID</p>
+              </div>
+              <div class="auction__info--item2">
+                <a target="_blank" href="https://www.google.com/">Beige</a>
+                <p><img class="auction__logo" src="./icons/auction__eth.svg" alt="The auction ETH"> <span>2.99 ETH</span></p>
+              </div>
+              <div class="auction__info--item3">
+                <a target="_blank" href="https://www.google.com/">#12983</a>
+                <span>1 day left</span>
+              </div>
+            </div>
+          </li>
+          <li class="auction__item">
+            <a class="auction__link" target="_blank" href="https://www.google.com/"><img src="./images/auction__redman.png" alt="The Red Man"></a>
+            <div class="auction__info">
+              <div class="auction__info--item1">
+                <p>GLOOP SERIES</p>
+                <p>TOP BID</p>
+              </div>
+              <div class="auction__info--item2">
+                <a target="_blank" href="https://www.google.com/">Red Man</a>
+                <p><img class="auction__logo" src="./icons/auction__eth.svg" alt="The auction ETH"> <span>2.99 ETH</span></p>
+              </div>
+              <div class="auction__info--item3">
+                <a target="_blank" href="https://www.google.com/">#12983</a>
+                <span>1 day left</span>
+              </div>
+            </div>
+          </li>
+          <li class="auction__item">
+            <a class="auction__link" target="_blank" href="https://www.google.com/"><img src="./images/auction__green.png" alt="The Green"></a>
+            <div class="auction__info">
+              <div class="auction__info--item1">
+                <p>GLOOP SERIES</p>
+                <p>TOP BID</p>
+              </div>
+              <div class="auction__info--item2">
+                <a target="_blank" href="https://www.google.com/">Green</a>
+                <p><img class="auction__logo" src="./icons/auction__eth.svg" alt="The auction ETH"> <span>2.99 ETH</span></p>
+              </div>
+              <div class="auction__info--item3">
+                <a target="_blank" href="https://www.google.com/">#12983</a>
+                <span>1 day left</span>
+              </div>
+            </div>
+          </li>
+        </div>
+        <style type="text/css">
+          .auction__list .owl-stage{
+            padding-left: 0px!important;
+          }
+        </style>
+      </div>
+    </section>
+    <section class="release">
+      <div class="container container__release">
+          <div class="release__box release__box1">
+            <div class="release__image release__image1">
+              <img src="./images/release__img1.png" alt="The image of release" class="release__img release__img1">
+              <img src="./images/release__img1-2.png" alt="The image of release" class="release__img release__img2">
+              <div class="release__right">
+                <p class="release__item1">GLOOP SERIES</p>
+                <a target="_blank" href="https://www.google.com/" class="release__item2">Red Man</a>
+                <a target="_blank" href="https://www.google.com/" class="release__item3">#12983</a>
+              </div>
+            </div>
+            <div class="release__info release__info1">
+              <div class="release__info--heading">Initial Release 4/11</div>
+              <div class="release__info--para">
+                <p>We have released four limited edition NFTs early which can be bid on via OpenSea.</p>
+                <br/>
+                <p>These will be the only four of these NFTs we ever make, so be sure not to miss out!</p>
+                <br/>
+                <p>50% of proceeds go to charity.</p>
+              </div>
+              <div class="release__info--checkout"><a target="_blank" href="https://www.google.com/">Check them out &nbsp<i class="fa-solid fa-arrow-right-long"></i></a></div>
+            </div>
+          </div>
+          <div class="release__box release__box2">
+            <div class="release__image release__image2">
+              <img src="./images/release__img2.png" alt="The image of release" class="release__img release__img1 release__img1-2">
+              <img src="./images/release__img2-2.png" alt="The image of release" class="release__img release__img2 release__img2-2">
+            </div>
+            <div class="release__info release__info2">
+              <div class="release__info--heading">Initial Release 4/11</div>
+              <div class="release__info--para">
+                <p>We have released four limited edition NFTs early which can be bid on via OpenSea.</p>
+                <br/>
+                <p>These will be the only four of these NFTs we ever make, so be sure not to miss out!</p>
+                <br/>
+                <p>50% of proceeds go to charity.</p>
+              </div>
+              <div class="release__info--checkout"><a target="_blank" href="https://www.google.com/">Check them out &nbsp<i class="fa-solid fa-arrow-right-long"></i></a></div>
+            </div>
+          </div>
+        <div class="release__nft">
+          <div class="release__nft-box release__nft-box1">
+            <img class="release__nft--img" src="./images/release__nft.png" alt="The NFT icon">
+            <div class="release__nft--heading">An NFT like no other</div>
+            <div class="release__nft--para">
+              <p>Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live on 18/9.</p>
+              <br/><br/><br/>
+              <p>Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live on 18/9.Don’t miss out on the release of our new NFT.</p>
+            </div>
+          </div>
+          <div class="release__nft-box release__nft-box2">
+            <img class="release__nft--img release__nft--img2" src="./images/release__nft.png" alt="The NFT icon">
+            <img class="release__nft--img release__nft--img-grey" src="./images/release__nft2.png" alt="The NFT icon">
+            <div class="release__nft--heading">An NFT like no other</div>
+            <div class="release__nft--para">
+              <p>Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live on 18/9.</p>
+              <br/><br/><br/>
+              <p>Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live on 18/9.Don’t miss out on the release of our new NFT.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="soon">
+      <div class="container container__soon">
+        <div class="soon__info">
+          <p class="soon__notice">LAUNCHING SOON</p>
+          <p class="soon__heading">An NFT like no other</p>
+          <p class="soon__text">Don’t miss out on the release of our new NFT. Sign up below to receive updates.</p>
+          <a class="soon__btn buttons" target="_blank" href="https://www.google.com/">Sign Up</a>
+        </div>
+        <div class="soon__image">
+          <img class="soon__image--img" src="./images/soon__img.png" alt="The image">
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__box">
+        <div class="footer__box1">
+          <a class="footer__logo" target="_blank" href="https://www.google.com/">
+            <img class="logo__img logo-white" src="./icons/logo.png" alt="Logo of NFT">
+            <img class="logo__img logo-dark" src="./icons/logo-dark-mode.png" alt="Logo of NFT">
+          </a>
+          <p class="footer__exclusive">Exclusive NFT Collection</p>
+          <div class="footer__social">
+            <img src="./icons/fb.svg" alt="Facebook">
+            <img src="./icons/twitter.svg" alt="Twitter">
+            <img src="./icons/instagram.svg" alt="Instagram">
+            <img src="./icons/tiktok.svg" alt="Tiktok">
+          </div>
+        </div>
+        <div class="footer__menu">
+          <div class="footer__menu-item">
+            <div class="footer__menu-item--heading">ABOUT</div>
+            <ul class="footer__menu-item--list">
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">About</a></li>
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">Terms</a></li>
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">Legal</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-item">
+            <div class="footer__menu-item--heading">NFT</div>
+            <ul class="footer__menu-item--list">
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">OpenSea</a></li>
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">Maker</a></li>
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">Learn</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-item">
+            <div class="footer__menu-item--heading">CONTACT</div>
+            <ul class="footer__menu-item--list">
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">Press</a></li>
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-item">
+            <div class="footer__menu-item--heading">SOCIAL</div>
+            <ul class="footer__menu-item--list">
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">Twitter</a></li>
+              <li class="footer__menu-item--option"><a target="_blank" href="https://www.google.com/">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__scope">
+        <p class="footer__copyright">© Copyright 2022 NFTlanding</p>
+        <p class="footer__august">Launching August 2022</p>
+      </div>
+    </footer>
+    <section class="dark">
+      <img class="dark__setting dark__setting1" id="dark-mode2" src="./icons/dark-mode.svg" alt="The Light Mode Button">
+      <img class="dark__setting dark__setting2" id="light-mode2" src="./icons/light-mode.svg" alt="The Dark Mode Button">
+    </section>
+  </div>
+  <!-- OWL CAROUSEL SLIDER JS -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <!-- SLIDER JS -->
+  <script src="./js/sliders.js"></script>
+  <!-- INTERACTION JS -->
+  <script src="./js/interaction.js"></script>
+</body>
+</html>

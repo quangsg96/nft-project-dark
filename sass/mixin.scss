@@ -1,0 +1,66 @@
+@mixin varela {
+  font-family: 'Varela Round', sans-serif;
+}
+@mixin roboto {
+  font-family: 'Roboto', sans-serif;
+}
+@mixin poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin list {
+  padding: 0;
+  list-style: none;
+}
+
+@mixin graBtn {
+  position: relative;
+  display: inline-block;
+  padding: 2.2rem 5.6rem 2.3rem 5.6rem;
+  background-color: #fff;
+  border-radius: 3.5rem;
+  color: #000;
+  // --- FONTS
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 3.5rem;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 3.5rem;
+    padding: 4px;
+    z-index: -1;
+  }
+}
+@mixin graColor {
+  &::after {
+    background-image: linear-gradient(
+      to right,
+      $text-special,
+      #ff3939,
+      #ffa500
+    );
+  }
+}
+@mixin graColor2 {
+  &::after {
+    background-image: linear-gradient(
+      to right,
+      $text-special,
+      #ff3939,
+      #39ffa0
+    );
+  }
+}
+
+@mixin flex($align: flex-start, $justify: flex-start, $wrap: wrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}
